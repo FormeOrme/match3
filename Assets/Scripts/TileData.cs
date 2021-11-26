@@ -18,17 +18,17 @@ public class TileData : MonoBehaviour {
     // Start is called before the first frame update
     void Start () {
         delta = 0;
-        r = Random.Range (0.0f, 1.0f);
+        r = Random.Range (0.8f, 1.2f);
         render = Instantiate (render, new Vector3 (0, 0, 0), Quaternion.identity);
     }
 
     // Update is called once per frame
     void Update () {
-        delta += 0.001F;
+        delta += Time.deltaTime;
         if (delta > 1) delta = 1;
 
-        float ly = data.EOB(Mathf.Lerp(yF, y, delta));
+        float ly = (Mathf.Lerp (yF, y, Tools.EOB(Tools.EP(delta, r))));
 
-        render.transform.position = new Vector3 (x * (1 + data.padding), ly * (1 + data.padding), 0);
+        render.transform.position = new Vector3 (x * (data.L + data.padding * 2), ly * (data.L + data.padding * 2), 0);
     }
 }

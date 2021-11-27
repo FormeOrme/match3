@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public static class Tools {
-    public static float EOB (float x) {
+public static class EasingTools {
+    public static float easeOutBounce (float x) {
         float n1 = 7.5625f;
         float d1 = 2.75f;
 
@@ -18,7 +16,7 @@ public static class Tools {
         }
     }
 
-    public static float EP (float x, float p) {
+    public static float easePow (float x, float p) {
         return Mathf.Pow (x, p);
     }
 }

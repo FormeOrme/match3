@@ -44,6 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da2d7debf01e71459fe1df8345a5e10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  side: 0
-  padding: 0
+  side: 6
+  L: 1
+  startingY: 8
+  padding: 0.1
+  baseTile: {fileID: 8280923392728897716, guid: 4534df582ac46c34b96ef452821a5a86,
+    type: 3}
   tiles: []

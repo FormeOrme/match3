@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   render: {fileID: 2983927087913073766, guid: 14fe1a50a1f42dc43986b81194f3bd35, type: 3}
+  data: {fileID: 0}
   x: 0
   y: 0
   yF: 0
